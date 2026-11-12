@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Ramakrishna Marathi — QA Engineer portfolio showcasing manual testing, API testing and Playwright automation projects." />
+  <title>Ramakrishna Marathi | QA Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="brand" href="#home">RM<span>.</span></a>
+      <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+      <div class="nav-links">
+        <a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#demos">Demos</a><a href="#contact" class="nav-cta">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero container" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot"></span> OPEN TO ENTRY-LEVEL QA OPPORTUNITIES</p>
+        <h1>Hi, I'm <span>Ramakrishna.</span><br> I test software to make it more reliable.</h1>
+        <p class="hero-text">Entry-level QA Engineer focused on manual testing, API testing and test automation using Playwright and TypeScript. I enjoy exploring how applications behave, finding issues and making testing repeatable.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#projects">Explore my work <span>↘</span></a>
+          <a class="button secondary" href="mailto:ramakrishnamarathi48@gmail.com">Contact me</a>
+        </div>
+        <div class="quick-links">
+          <!-- Replace # with your actual profile URLs before publishing. -->
+          <a href="#" data-placeholder="github">GitHub ↗</a><a href="#" data-placeholder="linkedin">LinkedIn ↗</a><a href="mailto:ramakrishnamarathi48@gmail.com">Email ↗</a>
+        </div>
+      </div>
+      <aside class="hero-card">
+        <div class="card-top"><span>QA / TEST AUTOMATION</span><span class="card-mark">✳</span></div>
+        <div class="code-window">
+          <div class="window-bar"><i></i><i></i><i></i><span>login.spec.ts</span></div>
+          <pre><code><b>test</b>(<em>'valid login'</em>, <span>async</span> ({ page }) =&gt; {
+  <span>await</span> page.goto(<em>'/login'</em>);
+  <span>await</span> page.getByLabel(<em>'Username'</em>)
+    .fill(<em>'standard_user'</em>);
+  <span>await</span> page.getByLabel(<em>'Password'</em>)
+    .fill(<em>'secret'</em>);
+  <span>await</span> page.getByRole(<em>'button'</em>, {
+    name: <em>'Login'</em>
+  }).click();
+
+  <b>await</b> expect(page).toHaveURL(/inventory/);
+});</code></pre>
+        </div>
+        <div class="hero-card-foot"><span><b>01</b> Understand</span><span><b>02</b> Test</span><span><b>03</b> Improve</span></div>
+      </aside>
+    </section>
+
+    <section class="proof-strip"><div class="container proof-grid"><div><strong>3</strong><span>QA projects</span></div><div><strong>42</strong><span>Banking API tests</span></div><div><strong>38</strong><span>Healthcare API tests</span></div><div><strong>90+</strong><span>E-commerce scenarios</span></div></div></section>
+
+    <section class="section container" id="about">
+      <div class="section-heading"><p class="eyebrow">01 / ABOUT</p><h2>Curious about how<br>software really works.</h2></div>
+      <div class="about-copy"><p>I'm a Computer Science graduate from Bengaluru building my career in software quality assurance. Through independent projects, I've practised designing test scenarios, validating REST APIs, automating checks and documenting defects.</p><p>I'm looking for an entry-level opportunity where I can contribute to a QA team, learn from experienced engineers and help ship dependable software.</p><div class="about-meta"><span><small>EDUCATION</small>BE, Computer Science · 2025</span><span><small>LOCATION</small>Bengaluru, India</span></div></div>
+    </section>
+
+    <section class="section skills-section" id="skills"><div class="container"><div class="section-heading"><p class="eyebrow">02 / SKILLS</p><h2>Tools I work with.</h2><p class="section-intro">A practical toolkit for testing web applications and APIs.</p></div>
+      <div class="skill-grid">
+        <article class="skill-card"><div class="skill-icon">⌕</div><h3>Manual Testing</h3><p>Functional, regression, smoke, exploratory, positive/negative and boundary testing; test case design and defect reporting.</p></article>
+        <article class="skill-card"><div class="skill-icon">{ }</div><h3>Automation</h3><p>Playwright, TypeScript, JavaScript, assertions, locators, Page Object Model, fixtures and HTML reports.</p></article>
+        <article class="skill-card"><div class="skill-icon">↔</div><h3>API & Contract Testing</h3><p>Postman, REST APIs, HTTP methods, JSON validation, Pact and consumer-driven contract testing.</p></article>
+        <article class="skill-card"><div class="skill-icon">▤</div><h3>Database & Delivery</h3><p>SQL, PostgreSQL, data validation, Git, GitHub Actions and basic CI workflows.</p></article>
+      </div>
+    </div></section>
+
+    <section class="section container" id="projects"><div class="section-heading"><p class="eyebrow">03 / SELECTED WORK</p><h2>Projects built by testing<br>real workflows.</h2><p class="section-intro">Independent projects where I designed test scenarios and practised repeatable testing.</p></div>
+      <div class="project-list">
+        <article class="project-card featured"><div class="project-number">01</div><div class="project-content"><div class="project-tags"><span>PLAYWRIGHT</span><span>TYPESCRIPT</span><span>PACT</span></div><h3>Banking API & Contract Testing</h3><p>Built and tested a RESTful banking API covering account creation, retrieval, updates and deletion. Added automated API tests, consumer-driven contracts and GitHub Actions execution.</p><ul><li>42 automated API test cases</li><li>Consumer contract generation and provider verification</li><li>Reusable API client functions and provider states</li></ul><div class="project-links"><a href="#" data-placeholder="banking-repo">View repository ↗</a><a href="#" data-placeholder="banking-video">Watch demo ↗</a></div></div><div class="project-art banking-art"><span>API</span><div class="art-line"></div><div class="art-node">200 OK</div><div class="art-node small">Pact ✓</div></div></article>
+        <article class="project-card"><div class="project-number">02</div><div class="project-content"><div class="project-tags"><span>POSTMAN</span><span>FHIR R4</span><span>PLAYWRIGHT</span></div><h3>Healthcare API Testing & Automation</h3><p>Designed and automated API checks across Patient, Practitioner, Organization, Encounter, Observation and Condition resources.</p><ul><li>38 test cases across six resources</li><li>Validated response structures and search parameters</li><li>Reusable assertions and HTML test reporting</li></ul><div class="project-links"><a href="#" data-placeholder="healthcare-repo">View repository ↗</a><a href="#" data-placeholder="healthcare-video">Watch demo ↗</a></div></div><div class="project-art health-art"><span>FHIR</span><div class="health-bars"><i></i><i></i><i></i><i></i></div><small>Bundle validation</small></div></article>
+        <article class="project-card"><div class="project-number">03</div><div class="project-content"><div class="project-tags"><span>MANUAL TESTING</span><span>PLAYWRIGHT</span><span>TYPESCRIPT</span></div><h3>E-commerce Web Application Testing</h3><p>Tested authentication, product search, product details and cart workflows through manual scenarios and automated regression checks.</p><ul><li>90+ designed test scenarios</li><li>Documented defects with reproducible steps</li><li>Reusable Page Object Model structure</li></ul><div class="project-links"><a href="#" data-placeholder="ecommerce-repo">View repository ↗</a><a href="#" data-placeholder="ecommerce-video">Watch demo ↗</a></div></div><div class="project-art shop-art"><div class="shop-window"><span></span><span></span><span></span><b>CHECKOUT</b></div></div></article>
+      </div>
+    </section>
+
+    <section class="section demos-section" id="demos"><div class="container"><div class="section-heading"><p class="eyebrow">04 / DEMONSTRATIONS</p><h2>See how I test.</h2><p class="section-intro">Short walkthroughs of my testing approach. Video links can be added as you publish each demonstration.</p></div><div class="demo-grid">
+      <article class="demo-card"><div class="demo-placeholder"><span>▶</span><small>VIDEO COMING SOON</small></div><div class="demo-info"><span>01 · API TESTING</span><h3>Testing REST APIs with Postman</h3><p>Requests, response validation and negative scenarios.</p></div></article>
+      <article class="demo-card"><div class="demo-placeholder"><span>▶</span><small>VIDEO COMING SOON</small></div><div class="demo-info"><span>02 · AUTOMATION</span><h3>Writing API tests with Playwright</h3><p>Test structure, assertions and execution reports.</p></div></article>
+      <article class="demo-card"><div class="demo-placeholder"><span>▶</span><small>VIDEO COMING SOON</small></div><div class="demo-info"><span>03 · MANUAL QA</span><h3>Writing a useful bug report</h3><p>Reproduction steps, expected results and evidence.</p></div></article>
+    </div></div></section>
+
+    <section class="section container contact-section" id="contact"><div><p class="eyebrow">05 / CONTACT</p><h2>Let's talk about<br>quality engineering.</h2><p class="section-intro">I'm open to entry-level QA, software testing and QA automation opportunities.</p></div><div class="contact-card"><span class="contact-label">GET IN TOUCH</span><a class="email-link" href="mailto:ramakrishnamarathi48@gmail.com">ramakrishnamarathi48@gmail.com ↗</a><div class="contact-links"><a href="#" data-placeholder="linkedin">LinkedIn ↗</a><a href="#" data-placeholder="github">GitHub ↗</a><a href="#" data-placeholder="youtube">YouTube ↗</a></div></div></section>
+  </main>
+  <footer class="footer"><div class="container"><span>© <span id="year"></span> Ramakrishna Marathi</span><span>Built with HTML, CSS & JavaScript · Hosted on GitHub Pages</span></div></footer>
+  <script src="script.js"></script>
+</body>
+</html>
